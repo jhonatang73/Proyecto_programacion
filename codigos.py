@@ -35,4 +35,9 @@ chart_data = pd.DataFrame(np.random.randn(n),columns=['data'])
 st.line_chart(chart_data)
 
 df = pd.DataFrame(np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],columns=['lat', 'lon'])
+#######
+import folium
+from folium.plugins import MiniMap
+mapa = folium.Map()
+mapa
          
