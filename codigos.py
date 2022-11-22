@@ -36,8 +36,13 @@ st.line_chart(chart_data)
 
 df = pd.DataFrame(np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],columns=['lat', 'lon'])
 
-import folium
-from folium.plugins import MiniMap
-mapa = folium.Map()
-mapa
+
+mapa_base = fl.Map()
+mapa_base.save("mapa_folium_001.html")
+mapa_base
+
+palacio_nacional = fl.Map(location=[18.47559892878191, -69.89774247032956],zoom_start=16)
+palacio_nacional.save("mapa_folium_002.html")
+palacio_nacional
+
          
