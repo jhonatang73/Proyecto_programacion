@@ -36,7 +36,7 @@ st.line_chart(chart_data)
 
 df = pd.DataFrame(np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],columns=['lat', 'lon'])
 
-
+import folium
 mapa_base = fl.Map()
 mapa_base.save("mapa_folium_001.html")
 mapa_base
